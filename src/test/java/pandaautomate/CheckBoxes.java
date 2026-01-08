@@ -1,11 +1,10 @@
 package pandaautomate;
 
 import java.util.List;
-
 import java.time.Duration;
-
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -53,7 +52,7 @@ public class CheckBoxes{
         driver.switchTo().alert().dismiss();
         Thread.sleep(3000);
         
-      //Using prompt alert
+        //Using prompt alert
         driver.findElement(By.xpath("//a[@href='#Textbox']")).click();
         driver.findElement(By.xpath("//button[@class='btn btn-info']")).click();
         
@@ -64,6 +63,8 @@ public class CheckBoxes{
         Thread.sleep(3000);
         myalert.accept();
         Thread.sleep(3000);
+        
+        //handle alert using 
         
         driver.quit();
        
