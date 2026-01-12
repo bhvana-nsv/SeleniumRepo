@@ -1,6 +1,7 @@
 package pandaautomate;
 
 import java.time.Duration;
+import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -23,14 +24,21 @@ public class HandleFrames {
 	     driver.switchTo().frame(frame);
 	     
 	     driver.findElement(By.xpath("//input[@placeholder='Name']")).sendKeys("Haermmhan");
-	     driver.findElement(By.xpath("//input[@placeholder='Role']")).sendKeys("QA Tester");
+	     //driver.findElement(By.xpath("//input[@placeholder='Role']")).sendKeys("QA Tester");
 	     Thread.sleep(3000);
              
-	     driver.switchTo().defaultContent();
+	     List <WebElement> checkboxes =driver.findElements(By.xpath("//input[@type='checkbox']"));
 	     
-	     //driver.findElement(By.xpath(""));
+	     for(int i=0;i<10;i++) 
+	        { 
+	        	checkboxes.get(i).click();
+	        }  
+	     Thread.sleep(3000);
+	     
+	    //driver.switchTo().defaultContent();
 	     driver.quit();
-	}
-
+	     
+	     }
+	
 }
 

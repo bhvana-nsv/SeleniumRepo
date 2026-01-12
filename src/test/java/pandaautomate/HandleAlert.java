@@ -16,7 +16,7 @@ public class HandleAlert {
 		  driver.findElement(By.xpath("//a[@href='#Textbox']")).click();
 	        driver.findElement(By.xpath("//button[@class='btn btn-info']")).click();
 	        
-	        Alert myalert= driver.switchTo().alert();
+	        Alert myalert= driver.switchTo().alert(); 
 	        myalert.getText();
 	        Thread.sleep(3000);
 	        myalert.sendKeys("Welcome to Automation");

@@ -31,13 +31,14 @@ public class CheckBoxes{
         for(int i=1;i<3;i++) 
         {
         	checkboxes.get(i).click();
-        }
+        }    
         Thread.sleep(3000);
         
         for(int i=1;i<checkboxes.size();i++) 
         {
         	if(checkboxes.get(i).isSelected()) {
-        checkboxes.get(i).click();
+        		
+        checkboxes.get(i).click(); 
         	}
         }
         // Using alert command to accept 
