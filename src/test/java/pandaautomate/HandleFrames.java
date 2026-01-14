@@ -29,7 +29,7 @@ public class HandleFrames {
              
 	     List <WebElement> checkboxes =driver.findElements(By.xpath("//input[@type='checkbox']"));
 	     
-	     for(int i=0;i<10;i++) 
+	     for(int i=0;i<10;i++)  
 	        { 
 	        	checkboxes.get(i).click();
 	        }  
