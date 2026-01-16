@@ -32,7 +32,7 @@ public class WebTable {
 	     
 	     
 	     List <WebElement> checkboxes =driver.findElements(By.xpath("//input[@type='checkbox']"));
-	     
+	      
 	     for(int i=1;i<6;i++) 
 	        {  
 	        	checkboxes.get(i).click();
@@ -47,8 +47,7 @@ public class WebTable {
 	    	}
 	     }
 	     
-	      
-	      Thread.sleep(3000); 
+	     Thread.sleep(3000); 
 	     driver.quit(); 
 	 }
 
