@@ -15,13 +15,13 @@ public class DatePicker {
 		 
 		 driver.navigate().to("https://demo.automationtesting.in/Datepicker.html");
 	     driver.manage().window().maximize();
-	     driver.findElement(By.xpath("//input[@id='datepicker1']")).click();
+	     driver.findElement(By.xpath("//input[@id='datepicker1']")).click(); 
 	     driver.findElement(By.xpath("//span[@class='ui-icon ui-icon-circle-triangle-e']")).click();
 	     driver.findElement(By.xpath("//span[@class='ui-icon ui-icon-circle-triangle-e']")).click();
-	     driver.findElement(By.xpath("//span[@class='ui-state-default ui-state-active']")).click(); 
-	     
+	     //driver.findElement(By.xpath("//a[text()='6']")).click(); 
+	     driver.findElement(By.xpath("(//a[@class='ui-state-default'])[8]")).click(); 
 	     Thread.sleep(2000); 
-	     driver.quit();
+	     driver.quit(); 
 		 
 	} 
 

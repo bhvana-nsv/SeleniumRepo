@@ -1,7 +1,7 @@
 package pandaautomate;
 
 import java.time.Duration;
-import java.util.List;
+//import java.util.List;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.By;
@@ -17,17 +17,16 @@ public class MouseHoverAction {
 	        driver.manage().window().maximize();
 	        //driver.getCurrentUrl();
 	        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-	        WebElement demo=driver.findElement(By.xpath("//*[@id=\"header\"]/div[2]/div/div/div[3]/div[2]/div[2]/ul/li[7]/a"));
-	        
-	        WebElement button=driver.findElement(By.xpath("//*[@id=\"header\"]/div[2]/div/div/div[3]/div[2]/div[2]/ul/li[7]/ul/li[1]/a/text()]"));
-	        
+	        Thread.sleep(2000);
+	        // Mouse Hover Action
 	        Actions act= new Actions(driver);
-	        
-	        act.moveToElement(demo).moveToElement(button).perform();
+	        WebElement demo=driver.findElement(By.xpath("(//a[text()='Demo Sites'])[2]"));	        
+	        WebElement button=driver.findElement(By.xpath("(//a[text()='Practice Automation'])[2]")); 
+	        WebElement Mouse= driver.findElement(By.xpath("(//a[text()='Mouse Event'])[2]"));
+	        act.moveToElement(demo).moveToElement(button).moveToElement(Mouse).click().build().perform(); 
 	         
 	        Thread.sleep(3000);
 	        driver.quit();
-	           
+	        
 	 }
-
 }

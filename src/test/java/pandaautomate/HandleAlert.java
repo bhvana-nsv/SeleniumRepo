@@ -21,7 +21,7 @@ public class HandleAlert {
 	        Thread.sleep(3000);
 	        myalert.sendKeys("Welcome to Automation");
 	        myalert.accept();
-	        Thread.sleep(3000);
+	        Thread.sleep(3000); 
 		 
 	}
 }
